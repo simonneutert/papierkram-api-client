@@ -499,6 +499,8 @@ client.v1.bankTransaction.by({ id: 464 }).then((bankTransaction, err) => {
 }
 ```
 
+</details>
+
 ### Contact::Company (Unternehmen)
 
 #### Alle Unternehmen
