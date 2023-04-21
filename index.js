@@ -1,5 +1,5 @@
 import BankConnection from "./lib/v1/bankConnection";
-// import BankTransaction from "./lib/v1/bankTransaction";
+import BankTransaction from "./lib/v1/bankTransaction";
 import ContactCompany from "./lib/v1/contactCompany";
 import ContactCompanyPerson from "./lib/v1/contactCompanyPerson";
 import ExpenseVoucher from "./lib/v1/expenseVoucher";
@@ -19,7 +19,7 @@ class PapierkramApiClientV1 {
 
     this.v1 = {
       bankConnection: new BankConnection(this),
-      //   bankTransaction: new BankTransaction(this),
+      bankTransaction: new BankTransaction(this),
       contactCompany: new ContactCompany(this),
       contactCompanyPerson: new ContactCompanyPerson(this),
       expenseVoucher: new ExpenseVoucher(this),

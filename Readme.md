@@ -29,7 +29,7 @@ Schau bitte dort um alle Rückgabefelder/-werte zu checken, bis ich die Dokument
 🚨 global noch kein Support für PDF-Downloads. 🚨
 
 - [x] Banking::BankConnection
-- [ ] Banking::BankTransaction
+- [x] Banking::BankTransaction
 - [x] Contact::Company (Unternehmen)
 - [x] Contact::Company (Kontaktpersonen)
 - [x] Expense::Voucher (Ausgabe Belege)
@@ -43,18 +43,21 @@ Schau bitte dort um alle Rückgabefelder/-werte zu checken, bis ich die Dokument
 
 ## Inhaltsverzeichnis<!-- omit from toc -->
 
-- [Unterstützte Endpunkte](#unterstützte-endpunkte)
 - [Installation](#installation)
 - [Verwendung](#verwendung)
 - [Endpunkte V1](#endpunkte-v1)
   - [Banking::BankConnection (Bankverbindungen)](#bankingbankconnection-bankverbindungen)
     - [Alle Bankverbindungen](#alle-bankverbindungen)
     - [Eine bestimmte Bankverbindung](#eine-bestimmte-bankverbindung)
-  - [Banking::BankTransaction (Banktransaktionen) (WIP)](#bankingbanktransaction-banktransaktionen-wip)
-  - [Contact::Company (Unternehmen) (WIP)](#contactcompany-unternehmen-wip)
+  - [Banking::BankTransaction (Banktransaktionen)](#bankingbanktransaction-banktransaktionen)
+    - [Alle Banktransaktionen](#alle-banktransaktionen)
+    - [Eine bestimmte Banktransaktion](#eine-bestimmte-banktransaktion)
+  - [Contact::Company (Unternehmen)](#contactcompany-unternehmen)
     - [Alle Unternehmen](#alle-unternehmen)
     - [Ein bestimmtes Unternehmen](#ein-bestimmtes-unternehmen)
-  - [Contact::Contact (Kontaktpersonen) (WIP)](#contactcontact-kontaktpersonen-wip)
+  - [Contact::Company (Kontaktpersonen)](#contactcompany-kontaktpersonen)
+    - [Alle Kontaktpersonen eines Unternehmens](#alle-kontaktpersonen-eines-unternehmens)
+    - [Eine Kontaktperson eines Unternehmens](#eine-kontaktperson-eines-unternehmens)
   - [Expense::Voucher (Ausgabebelege)](#expensevoucher-ausgabebelege)
     - [Ein bestimmter Ausgabebeleg](#ein-bestimmter-ausgabebeleg)
   - [Income::Estimate (Angebote)](#incomeestimate-angebote)
@@ -307,12 +310,193 @@ client.v1.bankConnection.by({ id: 464 }).then((bankConnection, err) => {
 
 </details>
 
-### Banking::BankTransaction (Banktransaktionen) (WIP)
+### Banking::BankTransaction (Banktransaktionen)
+
+#### Alle Banktransaktionen
 
 ```js
 client.v1.bankTransaction.all().then((bankTransactions, err) => {
   console.log(bankTransactions);
 });
+```
+
+#### Parameter<!-- omit in toc -->
+
+| Parameter        | Typ     | Beschreibung                  |
+| ---------------- | ------- | ----------------------------- |
+| page             | Integer | Seite                         |
+| pageSize         | Integer | Anzahl der Elemente pro Seite |
+| orderBy          | String  | Sortierung                    |
+| orderDirection   | String  | Sortierungsrichtung           |
+| bankConnectionId | Integer | ID der Bankverbindung         |
+
+<details>
+
+<summary>Beispielantwort für `body`</summary>
+
+```json
+{
+  "type": "list",
+  "page": 1,
+  "page_size": 100,
+  "total_pages": 1,
+  "total_entries": 2,
+  "has_more": false,
+  "entries": [
+    {
+      "type": "banking_transaction",
+      "id": 577,
+      "state": "imported",
+      "value": 0,
+      "currency": "EUR",
+      "storno": null,
+      "customerref": null,
+      "instref": null,
+      "gvcode": null,
+      "text": null,
+      "usage": null,
+      "transaction_type": "default",
+      "sepa": null,
+      "from": {
+        "bic": null,
+        "iban": null,
+        "account_no": null,
+        "blz": null,
+        "currency": null,
+        "name": null
+      },
+      "saldo": {
+        "value": 0,
+        "currency": "EUR",
+        "timestamp": "2023-04-04T10:14:14.000+02:00"
+      },
+      "primanota": null,
+      "valuta": null,
+      "bdate": "2023-04-04T10:14:14.000+02:00",
+      "seen": null,
+      "fintecapi_turnover_id": null,
+      "imported_at": "2023-04-02T10:14:14.000+02:00",
+      "created_at": "2023-04-04T10:14:14.000+02:00",
+      "updated_at": "2023-04-04T10:14:14.000+02:00",
+      "tags": null,
+      "categories": null,
+      "bank_connection": {
+        "type": "bank_connection",
+        "id": 1,
+        "name": "Standard"
+      }
+    },
+    {
+      "type": "banking_transaction",
+      "id": 578,
+      "state": "imported",
+      "value": 0,
+      "currency": "EUR",
+      "storno": null,
+      "customerref": null,
+      "instref": null,
+      "gvcode": null,
+      "text": null,
+      "usage": null,
+      "transaction_type": "default",
+      "sepa": null,
+      "from": {
+        "bic": null,
+        "iban": null,
+        "account_no": null,
+        "blz": null,
+        "currency": null,
+        "name": null
+      },
+      "saldo": {
+        "value": 0,
+        "currency": "EUR",
+        "timestamp": "2023-04-04T10:14:14.000+02:00"
+      },
+      "primanota": null,
+      "valuta": null,
+      "bdate": "2023-04-04T10:14:14.000+02:00",
+      "seen": null,
+      "fintecapi_turnover_id": null,
+      "imported_at": "2023-04-02T10:14:14.000+02:00",
+      "created_at": "2023-04-04T10:14:14.000+02:00",
+      "updated_at": "2023-04-04T10:14:14.000+02:00",
+      "tags": null,
+      "categories": null,
+      "bank_connection": {
+        "type": "bank_connection",
+        "id": 1,
+        "name": "Standard"
+      }
+    }
+  ]
+}
+```
+
+</details>
+
+#### Eine bestimmte Banktransaktion
+
+```js
+client.v1.bankTransaction.by({ id: 464 }).then((bankTransaction, err) => {
+  console.log(bankTransaction);
+});
+```
+
+#### Parameter<!-- omit in toc -->
+
+| Parameter | Typ     | Beschreibung |
+| --------- | ------- | ------------ |
+| id        | Integer | ID           |
+
+ <details>
+
+ <summary>Beispielantwort für `body`</summary>
+
+```json
+{
+  "type": "banking_transaction",
+  "id": 579,
+  "state": "imported",
+  "value": 0,
+  "currency": "EUR",
+  "storno": null,
+  "customerref": null,
+  "instref": null,
+  "gvcode": null,
+  "text": null,
+  "usage": null,
+  "transaction_type": "default",
+  "sepa": null,
+  "from": {
+    "bic": null,
+    "iban": null,
+    "account_no": null,
+    "blz": null,
+    "currency": null,
+    "name": null
+  },
+  "saldo": {
+    "value": 0,
+    "currency": "EUR",
+    "timestamp": "2023-04-04T10:14:14.000+02:00"
+  },
+  "primanota": null,
+  "valuta": null,
+  "bdate": "2023-04-04T10:14:14.000+02:00",
+  "seen": null,
+  "fintecapi_turnover_id": null,
+  "imported_at": "2023-04-02T10:14:14.000+02:00",
+  "created_at": "2023-04-04T10:14:14.000+02:00",
+  "updated_at": "2023-04-04T10:14:14.000+02:00",
+  "tags": null,
+  "categories": null,
+  "bank_connection": {
+    "type": "bank_connection",
+    "id": 1,
+    "name": "Standard"
+  }
+}
 ```
 
 ### Contact::Company (Unternehmen)
@@ -552,9 +736,11 @@ client.v1.contactCompany.by({ id: 4754 }).then((company, err) => {
 #### Alle Kontaktpersonen eines Unternehmens
 
 ```js
-client.v1.contactCompanyPerson.all({ contactCompanyId: 123 }).then((persons, err) => {
-  console.log(persons);
-});
+client.v1.contactCompanyPerson
+  .all({ contactCompanyId: 123 })
+  .then((persons, err) => {
+    console.log(persons);
+  });
 ```
 
 #### Parameter<!-- omit in toc -->
