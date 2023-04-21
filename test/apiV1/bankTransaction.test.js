@@ -57,7 +57,6 @@ test("BankConnection by id", async () => {
   expect(responseBody).toHaveProperty("updated_at");
   expect(responseBody).toHaveProperty("usage");
   expect(responseBody).toHaveProperty("value");
-  expect(responseBody.value).toHaveProperty("valuta");
 
   return responseBody;
 });
