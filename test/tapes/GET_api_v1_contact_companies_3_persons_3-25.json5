@@ -1,0 +1,161 @@
+{
+    meta: {
+        createdAt: '2023-04-21T19:18:31.946Z',
+        host: 'https://simonneutert.papierkram.de',
+        resHumanReadable: true,
+    },
+    req: {
+        headers: {
+            accept: 'application/json',
+            method: 'GET',
+        },
+        url: '/api/v1/contact/companies/3/persons/3',
+        method: 'GET',
+        body: '',
+    },
+    res: {
+        status: 200,
+        headers: {
+            'content-type': [
+                'application/json; charset=utf-8',
+            ],
+            'transfer-encoding': [
+                'chunked',
+            ],
+            status: [
+                '200 OK',
+            ],
+            'cache-control': [
+                'no-store',
+            ],
+            'access-control-allow-origin': [
+                '*',
+            ],
+            vary: [
+                'Accept',
+            ],
+            'referrer-policy': [
+                'strict-origin-when-cross-origin',
+            ],
+            'x-remaining-quota': [
+                '8753',
+            ],
+            'x-permitted-cross-domain-policies': [
+                'none',
+            ],
+            pragma: [
+                'no-cache',
+            ],
+            'x-request-id': [
+                '1ea11d09-1de4-4166-9402-4adf0bf6712f',
+            ],
+            'x-download-options': [
+                'noopen',
+            ],
+            etag: [
+                'W/"cbdcba916ef06a439f54801a390b9f40"',
+            ],
+            'x-frame-options': [
+                'SAMEORIGIN',
+            ],
+            'x-runtime': [
+                '0.089375',
+            ],
+            expires: [
+                'Fri, 01 Jan 1990 00:00:00 GMT',
+            ],
+            date: [
+                'Fri, 21 Apr 2023 19:18:32 GMT',
+            ],
+            'set-cookie': '<SET-COOKIE>',
+            'x-powered-by': [
+                'Phusion Passenger(R) 6.0.15',
+            ],
+            server: [
+                'nginx/1.18.0 + Phusion Passenger(R) 6.0.15',
+            ],
+            'x-version': [
+                'STABLE',
+            ],
+            'x-robots-tag': [
+                'noindex, nofollow;',
+            ],
+            'strict-transport-security': [
+                'max-age=31536000; includeSubdomains;;',
+            ],
+            'x-xss-protection': [
+                '1; mode=block;',
+            ],
+            'x-content-type-options': [
+                'nosniff;',
+            ],
+            'x-debug-subdomain': [
+                'simonneutert',
+            ],
+            connection: [
+                'close',
+            ],
+        },
+        body: {
+            type: 'person',
+            id: 3,
+            first_name: 'Belle',
+            last_name: 'Dolphin',
+            title: 'Dr. rer. nat.',
+            salutation: 'Frau',
+            position: 'Top',
+            department: 'Fox',
+            phone: '123456',
+            skype: '123456',
+            fax: '123456',
+            email: 'belle@test.test',
+            flagged: null,
+            created_at: '2023-04-12T16:01:33.000+02:00',
+            updated_at: '2023-04-12T16:01:33.000+02:00',
+            mobile: '123456',
+            comment: 'belle',
+            default: true,
+            company: {
+                type: 'company',
+                id: 3,
+                name: 'Büffelranch Johnny',
+                contact_type: 'customer',
+                supplier_no: null,
+                customer_no: 'K-00001',
+                email: 'simon@simon-neutert.de',
+                phone: '',
+                website: '',
+                twitter: '',
+                fax: '',
+                postal_street: null,
+                postal_zip: null,
+                postal_city: null,
+                postal_country: 'Deutschland',
+                physical_street: null,
+                physical_zip: null,
+                physical_city: null,
+                physical_country: 'Deutschland',
+                delivery_method: 'pdf',
+                ust_idnr: '',
+                logo_file_name: null,
+                logo_content_type: null,
+                logo_file_size: null,
+                logo_updated_at: null,
+                bank_blz: '',
+                bank_institute: '',
+                bank_account_no: '',
+                bank_bic: '',
+                bank_sepa_mandate_reference: 'SEPAMRK00001BJ',
+                bank_sepa_mandate_accepted: null,
+                bank_iban: '',
+                inbound_address: 'euch',
+                notes: '',
+                record_state: 'active',
+                flagged: null,
+                created_at: '2018-03-06T15:57:36.000+01:00',
+                updated_at: '2023-04-20T10:57:54.000+02:00',
+                color: 'blue',
+            },
+        },
+    },
+}

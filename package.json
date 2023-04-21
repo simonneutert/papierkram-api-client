@@ -1,0 +1,35 @@
+{
+  "name": "papierkram-api-client",
+  "version": "0.1.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest --detectOpenHandles --runInBand --forceExit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simonneutert/papierkram-api-client.git"
+  },
+  "keywords": [
+    "nodejs",
+    "js",
+    "api",
+    "rest",
+    "papierkram",
+    "client"
+  ],
+  "author": "Simon Neutert",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/simonneutert/papierkram-api-client/issues"
+  },
+  "homepage": "https://github.com/simonneutert/papierkram-api-client#readme",
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "talkback": "^3.0.2"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.1"
+  },
+  "type": "module"
+}
