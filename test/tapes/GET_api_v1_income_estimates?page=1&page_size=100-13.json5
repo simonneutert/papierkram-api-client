@@ -1,6 +1,6 @@
 {
     meta: {
-        createdAt: '2023-04-15T17:22:41.934Z',
+        createdAt: '2023-04-22T07:37:11.844Z',
         host: 'https://simonneutert.papierkram.de',
         resHumanReadable: true,
     },
@@ -38,7 +38,7 @@
                 'strict-origin-when-cross-origin',
             ],
             'x-remaining-quota': [
-                '8826',
+                '8627',
             ],
             'x-permitted-cross-domain-policies': [
                 'none',
@@ -47,25 +47,25 @@
                 'no-cache',
             ],
             'x-request-id': [
-                'bb7b6aab-07a3-458c-96b3-790d7a11c00a',
+                '6ae1bbc1-bfd0-46e3-a43d-a788cafd91ca',
             ],
             'x-download-options': [
                 'noopen',
             ],
             etag: [
-                'W/"531ac1a1adff9de64d625a1e3741e971"',
+                'W/"3c9e1d2719c562ef65cc2cdec85e98fc"',
             ],
             'x-frame-options': [
                 'SAMEORIGIN',
             ],
             'x-runtime': [
-                '0.088187',
+                '0.093854',
             ],
             expires: [
                 'Fri, 01 Jan 1990 00:00:00 GMT',
             ],
             date: [
-                'Sat, 15 Apr 2023 17:22:42 GMT',
+                'Sat, 22 Apr 2023 07:37:12 GMT',
             ],
             'set-cookie': '<SET-COOKIE>',
             'x-powered-by': [
@@ -101,7 +101,7 @@
             page: 1,
             page_size: 100,
             total_pages: 1,
-            total_entries: 1,
+            total_entries: 2,
             has_more: false,
             entries: [
                 {
@@ -114,7 +114,7 @@
                     estimate_no: null,
                     sent_on: null,
                     sent_via: null,
-                    sent_to: null,
+                    sent_to: '<EMAIL>',
                     state: 'draft',
                     record_state: 'active',
                     custom_template: null,
@@ -123,7 +123,7 @@
                     total_gross: 31.82,
                     billing: {
                         company: 'Büffelranch Johnny',
-                        email: null,
+                        email: '<EMAIL>',
                         ust_idnr: '',
                         street: '',
                         zip: '',
@@ -131,6 +131,35 @@
                         country: 'Deutschland',
                         contact_person: '',
                         department: '',
+                    },
+                },
+                {
+                    type: 'estimate',
+                    id: 3,
+                    name: '',
+                    description: '',
+                    document_date: '2023-04-19',
+                    customer_no: 'K-00001',
+                    estimate_no: null,
+                    sent_on: null,
+                    sent_via: null,
+                    sent_to: '<EMAIL>',
+                    state: 'draft',
+                    record_state: 'active',
+                    custom_template: null,
+                    total_net: 13.37,
+                    total_vat: 2.54,
+                    total_gross: 15.91,
+                    billing: {
+                        company: 'Büffelranch Johnny',
+                        email: '<EMAIL>',
+                        ust_idnr: '',
+                        street: '',
+                        zip: '',
+                        city: '',
+                        country: 'Deutschland',
+                        contact_person: 'Frau Dr. rer. nat. Belle Dolphin',
+                        department: 'Fox',
                     },
                 },
             ],

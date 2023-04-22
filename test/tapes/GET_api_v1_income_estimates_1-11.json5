@@ -1,6 +1,6 @@
 {
     meta: {
-        createdAt: '2023-04-15T17:22:41.509Z',
+        createdAt: '2023-04-22T07:37:11.260Z',
         host: 'https://simonneutert.papierkram.de',
         resHumanReadable: true,
     },
@@ -38,7 +38,7 @@
                 'strict-origin-when-cross-origin',
             ],
             'x-remaining-quota': [
-                '8828',
+                '8629',
             ],
             'x-permitted-cross-domain-policies': [
                 'none',
@@ -47,7 +47,7 @@
                 'no-cache',
             ],
             'x-request-id': [
-                '6abc1319-a9e6-44c6-b135-ce213c2c8481',
+                '4da82ca0-b136-4526-90fe-ab8682459176',
             ],
             'x-download-options': [
                 'noopen',
@@ -59,13 +59,13 @@
                 'SAMEORIGIN',
             ],
             'x-runtime': [
-                '0.151325',
+                '0.231077',
             ],
             expires: [
                 'Fri, 01 Jan 1990 00:00:00 GMT',
             ],
             date: [
-                'Sat, 15 Apr 2023 17:22:41 GMT',
+                'Sat, 22 Apr 2023 07:37:11 GMT',
             ],
             'set-cookie': '<SET-COOKIE>',
             'x-powered-by': [
@@ -106,7 +106,7 @@
             estimate_no: null,
             sent_on: null,
             sent_via: null,
-            sent_to: null,
+            sent_to: '<EMAIL>',
             state: 'draft',
             record_state: 'active',
             custom_template: null,
@@ -115,7 +115,7 @@
             total_gross: 31.82,
             billing: {
                 company: 'Büffelranch Johnny',
-                email: null,
+                email: '<EMAIL>',
                 ust_idnr: '',
                 street: '',
                 zip: '',

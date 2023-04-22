@@ -1,6 +1,6 @@
 {
     meta: {
-        createdAt: '2023-04-21T22:21:45.008Z',
+        createdAt: '2023-04-22T07:37:08.615Z',
         host: 'https://simonneutert.papierkram.de',
         resHumanReadable: true,
     },
@@ -38,7 +38,7 @@
                 'strict-origin-when-cross-origin',
             ],
             'x-remaining-quota': [
-                '8734',
+                '8636',
             ],
             'x-permitted-cross-domain-policies': [
                 'none',
@@ -47,7 +47,7 @@
                 'no-cache',
             ],
             'x-request-id': [
-                '629dd420-eb78-4293-a5b6-6d1bdd988ad2',
+                '9f5975ba-ba1c-49ad-ae38-ff47aefcabc8',
             ],
             'x-download-options': [
                 'noopen',
@@ -59,13 +59,13 @@
                 'SAMEORIGIN',
             ],
             'x-runtime': [
-                '0.710879',
+                '0.686671',
             ],
             expires: [
                 'Fri, 01 Jan 1990 00:00:00 GMT',
             ],
             date: [
-                'Fri, 21 Apr 2023 22:21:45 GMT',
+                'Sat, 22 Apr 2023 07:37:09 GMT',
             ],
             'set-cookie': '<SET-COOKIE>',
             'x-powered-by': [

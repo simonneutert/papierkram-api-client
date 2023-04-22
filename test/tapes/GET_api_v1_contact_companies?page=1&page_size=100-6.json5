@@ -1,6 +1,6 @@
 {
     meta: {
-        createdAt: '2023-04-15T17:22:46.037Z',
+        createdAt: '2023-04-22T07:37:09.937Z',
         host: 'https://simonneutert.papierkram.de',
         resHumanReadable: true,
     },
@@ -9,7 +9,7 @@
             accept: 'application/json',
             method: 'GET',
         },
-        url: '/api/v1/info',
+        url: '/api/v1/contact/companies?page=1&page_size=100',
         method: 'GET',
         body: '',
     },
@@ -38,7 +38,7 @@
                 'strict-origin-when-cross-origin',
             ],
             'x-remaining-quota': [
-                '8812',
+                '8634',
             ],
             'x-permitted-cross-domain-policies': [
                 'none',
@@ -47,25 +47,25 @@
                 'no-cache',
             ],
             'x-request-id': [
-                '03a55dd5-0c19-4005-b82f-e376647f4067',
+                '9dc24c67-fc9c-4426-9c67-00ac93c090ac',
             ],
             'x-download-options': [
                 'noopen',
             ],
             etag: [
-                'W/"0f47d080236d2e818f0e15c42ef32a1b"',
+                'W/"23295cc20b9fa702ebe2b6fc954e0cc5"',
             ],
             'x-frame-options': [
                 'SAMEORIGIN',
             ],
             'x-runtime': [
-                '0.078916',
+                '0.092216',
             ],
             expires: [
                 'Fri, 01 Jan 1990 00:00:00 GMT',
             ],
             date: [
-                'Sat, 15 Apr 2023 17:22:46 GMT',
+                'Sat, 22 Apr 2023 07:37:10 GMT',
             ],
             'set-cookie': '<SET-COOKIE>',
             'x-powered-by': [
@@ -97,14 +97,55 @@
             ],
         },
         body: {
-            api: {
-                version: '1.0.0',
-            },
-            settings: {
-                custom_templates: {
-                    invoices: [],
+            type: 'list',
+            page: 1,
+            page_size: 100,
+            total_pages: 1,
+            total_entries: 1,
+            has_more: false,
+            entries: [
+                {
+                    type: 'company',
+                    id: 3,
+                    name: 'Büffelranch Johnny',
+                    contact_type: 'customer',
+                    supplier_no: null,
+                    customer_no: 'K-00001',
+                    email: '<EMAIL>',
+                    phone: '<PHONE>',
+                    website: '',
+                    twitter: '',
+                    fax: '<FAX>',
+                    postal_street: null,
+                    postal_zip: null,
+                    postal_city: null,
+                    postal_country: 'Deutschland',
+                    physical_street: null,
+                    physical_zip: null,
+                    physical_city: null,
+                    physical_country: 'Deutschland',
+                    delivery_method: 'pdf',
+                    ust_idnr: '',
+                    logo_file_name: null,
+                    logo_content_type: null,
+                    logo_file_size: null,
+                    logo_updated_at: null,
+                    bank_blz: '',
+                    bank_institute: '',
+                    bank_account_no: '<ACCOUNT_NO>',
+                    bank_bic: '<BIC>',
+                    bank_sepa_mandate_reference: '<SEPA_REF>',
+                    bank_sepa_mandate_accepted: null,
+                    bank_iban: '<BANK_IBAN>',
+                    inbound_address: 'euch',
+                    notes: '',
+                    record_state: 'active',
+                    flagged: null,
+                    created_at: '2018-03-06T15:57:36.000+01:00',
+                    updated_at: '2023-04-20T10:57:54.000+02:00',
+                    color: 'blue',
                 },
-            },
+            ],
         },
     },
 }

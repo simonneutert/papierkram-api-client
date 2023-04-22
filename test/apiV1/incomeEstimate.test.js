@@ -92,7 +92,7 @@ test("ApiV1IncomeEstimate all", async () => {
   expect(responseBody).toHaveProperty("total_entries");
   expect(responseBody).toHaveProperty("total_pages");
   expect(responseBody).toHaveProperty("type");
-  expect(responseBody.entries).toHaveLength(1);
+  expect(responseBody.entries).toHaveLength(2);
   expect(responseBody.entries[0]).toHaveProperty("billing");
   expect(responseBody.entries[0].billing).toHaveProperty("city");
   expect(responseBody.entries[0].billing).toHaveProperty("company");
