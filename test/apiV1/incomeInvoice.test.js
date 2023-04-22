@@ -28,7 +28,7 @@ test("ApiV1IncomeInvoice all", async () => {
   expect(responseBody).toHaveProperty("total_entries");
   expect(responseBody).toHaveProperty("total_pages");
   expect(responseBody).toHaveProperty("type");
-  expect(responseBody.entries).toHaveLength(12);
+  expect(responseBody.entries).toHaveLength(13);
   expect(responseBody.entries[0]).toHaveProperty("billing");
   expect(responseBody.entries[0].billing).toHaveProperty("city");
   expect(responseBody.entries[0].billing).toHaveProperty("company");

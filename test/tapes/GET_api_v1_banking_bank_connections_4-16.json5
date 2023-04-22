@@ -1,6 +1,6 @@
 {
     meta: {
-        createdAt: '2023-04-15T17:22:42.643Z',
+        createdAt: '2023-04-22T07:37:13.276Z',
         host: 'https://simonneutert.papierkram.de',
         resHumanReadable: true,
     },
@@ -9,7 +9,7 @@
             accept: 'application/json',
             method: 'GET',
         },
-        url: '/api/v1/banking/bank_connections?page=1&page_size=100&orderDirection=desc&order_by=created_at&order_direction=desc',
+        url: '/api/v1/banking/bank_connections/4',
         method: 'GET',
         body: '',
     },
@@ -38,7 +38,7 @@
                 'strict-origin-when-cross-origin',
             ],
             'x-remaining-quota': [
-                '8823',
+                '8624',
             ],
             'x-permitted-cross-domain-policies': [
                 'none',
@@ -47,25 +47,25 @@
                 'no-cache',
             ],
             'x-request-id': [
-                '95c8604e-b0ae-4dc8-921b-1555fb6a688b',
+                'b31f783b-200c-4baa-8521-b77f7ea34105',
             ],
             'x-download-options': [
                 'noopen',
             ],
             etag: [
-                'W/"d729c5d0613a54708a185c15a560720b"',
+                'W/"ca045efff0420453c87bfc3967203ab5"',
             ],
             'x-frame-options': [
                 'SAMEORIGIN',
             ],
             'x-runtime': [
-                '0.099543',
+                '0.077501',
             ],
             expires: [
                 'Fri, 01 Jan 1990 00:00:00 GMT',
             ],
             date: [
-                'Sat, 15 Apr 2023 17:22:42 GMT',
+                'Sat, 22 Apr 2023 07:37:13 GMT',
             ],
             'set-cookie': '<SET-COOKIE>',
             'x-powered-by': [
@@ -97,19 +97,24 @@
             ],
         },
         body: {
-            type: 'list',
-            page: 1,
-            page_size: 100,
-            total_pages: 1,
-            total_entries: 1,
-            has_more: false,
-            entries: [
-                {
-                    type: 'bank_connection',
-                    id: 4,
-                    name: 'Standard',
-                },
-            ],
+            type: 'bank_connection',
+            id: 4,
+            name: 'Standard',
+            account_no: null,
+            account_type: 'default',
+            bic: '<BIC>',
+            blz: '<BLZ>',
+            connection_type: 'default',
+            created_at: '2019-12-31T13:29:19.000+01:00',
+            customer_id: null,
+            hbci: null,
+            hbci_host_url: null,
+            hbci_version: null,
+            primary: null,
+            title: 'Standard',
+            updated_at: '2023-04-20T10:57:54.000+02:00',
+            user_id: null,
+            iban: '<IBAN>',
         },
     },
 }
