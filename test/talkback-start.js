@@ -58,6 +58,12 @@ function talkbackStart() {
             }
           }
 
+          if (key === "saldo") {
+            if (obj[key]["value"]) {
+              obj[key]["value"] = "<SALDO-TYPE-NUMBER>";
+            }
+          }
+
           if (key === "email") {
             obj[key] = "<EMAIL>";
           }
@@ -102,9 +108,6 @@ function talkbackStart() {
           }
           if (key === "fax") {
             obj[key] = "<FAX>";
-          }
-          if (key === "saldo") {
-            obj[key]["value"] = "<SALDO-TYPE-NUMBER>";
           }
         });
 
