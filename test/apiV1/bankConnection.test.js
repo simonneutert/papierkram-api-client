@@ -88,4 +88,5 @@ test("ApiV1BankConnection all with orderBy, orderDirection and dateRange", async
     });
 
   expect(status).toBe(200);
+  expect(responseBody).toBeDefined();
 });

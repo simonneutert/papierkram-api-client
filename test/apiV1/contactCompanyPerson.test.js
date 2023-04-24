@@ -127,4 +127,5 @@ test("BankConnectionPerson all with orderBy, orderDirection and dateRange", asyn
     });
 
   expect(status).toBe(200);
+  expect(responseBody).toBeDefined();
 });

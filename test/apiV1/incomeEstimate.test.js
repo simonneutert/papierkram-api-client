@@ -77,7 +77,7 @@ test("ApiV1IncomeEstimate all with orderBy", async () => {
       orderDirection: "desc",
     });
   expect(status).toBe(200);
-  expect(responseBody.entries[0].id > responseBody.entries[1].id);
+  expect(responseBody.entries[0].id > responseBody.entries[1].id).toBe(true);
 });
 
 test("ApiV1IncomeEstimate all", async () => {

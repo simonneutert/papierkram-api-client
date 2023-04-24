@@ -27,6 +27,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
       - run: npm ci
+      - run: npm run lint && npm run format
       - run: npm test
         env:
           NODE_OPTIONS: "--experimental-vm-modules"
