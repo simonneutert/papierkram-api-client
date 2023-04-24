@@ -19,6 +19,8 @@ const client = new PapierkramApiClientV1(
 test("ExpenseVoucher by id", async () => {
   const { status: status, body: responseBody } =
     await client.v1.expenseVoucher.by({ id: 7 });
+
+  expect(status).toBe(200);
   expect(responseBody).toBeDefined();
   expect(responseBody).toHaveProperty("amount");
   expect(responseBody).toHaveProperty("creditor");

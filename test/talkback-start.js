@@ -13,7 +13,7 @@ function traverse(obj, func) {
     func.apply(this, [i, obj[i], obj]);
     if (obj[i] !== null && typeof obj[i] === "object") {
       traverse(obj[i], func);
-    } else if (obj[i] !== null && typeof obj[i] === "array") {
+    } else if (obj[i] !== null && Array.isArray(obj[i])) {
       obj[i].forEach((item) => traverse(item, func));
     }
   }
@@ -33,7 +33,7 @@ function talkbackStart() {
           `${tape.req.method}${tape.req.url.replaceAll("/", "_")}-${tapeNumber}`
         );
       },
-      tapeDecorator: function tapeDecorator(tape, context) {
+      tapeDecorator: function tapeDecorator(tape, _context) {
         if (tape.req.headers.authorization) {
           const bearer = tape.req.headers.authorization.split("Bearer ");
           bearer[1] = "<BEARER-AUTH>";
