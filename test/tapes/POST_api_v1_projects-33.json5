@@ -1,0 +1,189 @@
+{
+    meta: {
+        createdAt: '2023-06-30T15:25:03.247Z',
+        host: 'https://simonneutert.papierkram.de',
+        reqHumanReadable: true,
+        resHumanReadable: true,
+    },
+    req: {
+        headers: {
+            accept: 'application/json',
+            'content-type': 'application/json',
+        },
+        url: '/api/v1/projects',
+        method: 'POST',
+        body: {
+            customer: {
+                id: 3,
+            },
+            name: 'Test Project',
+        },
+    },
+    res: {
+        status: 201,
+        headers: {
+            'content-type': [
+                'application/json; charset=utf-8',
+            ],
+            'transfer-encoding': [
+                'chunked',
+            ],
+            status: [
+                '201 Created',
+            ],
+            'cache-control': [
+                'no-store',
+            ],
+            'access-control-allow-origin': [
+                '*',
+            ],
+            vary: [
+                'Accept',
+            ],
+            'referrer-policy': [
+                'strict-origin-when-cross-origin',
+            ],
+            'x-remaining-quota': [
+                '9710',
+            ],
+            'x-permitted-cross-domain-policies': [
+                'none',
+            ],
+            pragma: [
+                'no-cache',
+            ],
+            'x-consumed-quota': [
+                '10',
+            ],
+            'x-request-id': [
+                '6a1e85a6-072d-4551-b6a9-21bfea5d7e25',
+            ],
+            'x-download-options': [
+                'noopen',
+            ],
+            etag: [
+                'W/"18529ebcf8a0e502a8f6454639bab8d7"',
+            ],
+            'x-frame-options': [
+                'SAMEORIGIN',
+            ],
+            'x-runtime': [
+                '0.182588',
+            ],
+            expires: [
+                'Fri, 01 Jan 1990 00:00:00 GMT',
+            ],
+            date: [
+                'Fri, 30 Jun 2023 15:25:03 GMT',
+            ],
+            'set-cookie': '<SET-COOKIE>',
+            'x-powered-by': [
+                'Phusion Passenger(R) 6.0.15',
+            ],
+            server: [
+                'nginx/1.18.0 + Phusion Passenger(R) 6.0.15',
+            ],
+            'x-version': [
+                'STABLE',
+            ],
+            'x-robots-tag': [
+                'noindex, nofollow;',
+            ],
+            'strict-transport-security': [
+                'max-age=31536000; includeSubdomains;;',
+            ],
+            'x-xss-protection': [
+                '1; mode=block;',
+            ],
+            'x-content-type-options': [
+                'nosniff;',
+            ],
+            'x-debug-subdomain': [
+                'simonneutert',
+            ],
+            connection: [
+                'close',
+            ],
+        },
+        body: {
+            type: 'project',
+            id: 36,
+            name: 'Test Project',
+            description: null,
+            start_date: null,
+            end_date: null,
+            flagged: null,
+            budget_type: null,
+            budget_money: null,
+            budget_time: null,
+            budget_time_unit: null,
+            customer_default: false,
+            record_state: 'active',
+            created_at: '2023-06-30T17:25:03.000+02:00',
+            updated_at: '2023-06-30T17:25:03.000+02:00',
+            company_id: 3,
+            color: null,
+            default_proposition: null,
+            customer: {
+                type: 'company',
+                id: 3,
+                name: 'adsad asd',
+                contact_type: 'customer',
+                supplier_no: null,
+                customer_no: 'K-00001',
+                email: '<EMAIL>',
+                phone: '<PHONE>',
+                website: null,
+                twitter: null,
+                fax: '<FAX>',
+                postal_street: 'as d',
+                postal_zip: '16845',
+                postal_city: 'Kyritz Holzhausen',
+                postal_country: 'Deutschland',
+                physical_street: null,
+                physical_zip: null,
+                physical_city: null,
+                physical_country: 'Deutschland',
+                delivery_method: null,
+                ust_idnr: null,
+                logo_file_name: null,
+                logo_content_type: null,
+                logo_file_size: null,
+                logo_updated_at: null,
+                bank_blz: null,
+                bank_institute: null,
+                bank_account_no: '<ACCOUNT_NO>',
+                bank_bic: '<BIC>',
+                bank_sepa_mandate_reference: '<SEPA_REF>',
+                bank_sepa_mandate_accepted: null,
+                bank_iban: '<BANK_IBAN>',
+                inbound_address: 'xaja',
+                notes: null,
+                record_state: 'active',
+                flagged: null,
+                created_at: '2023-04-27T17:07:47.000+02:00',
+                updated_at: '2023-06-28T17:05:46.000+02:00',
+                color: null,
+            },
+            team_members: [],
+            tasks: {
+                type: 'list',
+                has_more: false,
+                url: '/api/v1/tracker/tasks?project_id=36',
+                entries: [],
+            },
+            invoices: {
+                type: 'list',
+                has_more: false,
+                url: '/api/v1/income/invoices?project_id=36',
+                entries: [],
+            },
+            vouchers: {
+                type: 'list',
+                has_more: false,
+                url: '/api/v1/expense/vouchers?project_id=36',
+                entries: [],
+            },
+        },
+    },
+}

@@ -73,6 +73,11 @@ Schau bitte dort um alle Rückgabefelder/-werte zu checken, bis ich die Dokument
   - [Project (Projekte)](#project-projekte)
     - [Alle Projekte](#alle-projekte)
     - [Ein bestimmtes Projekt](#ein-bestimmtes-projekt)
+    - [Neues Projekt erstellen](#neues-projekt-erstellen)
+    - [Update eines Projekts](#update-eines-projekts)
+    - [Archivieren eines Projekts](#archivieren-eines-projekts)
+    - [Unarchivieren eines Projekts](#unarchivieren-eines-projekts)
+    - [Löschen eines Projekts](#löschen-eines-projekts)
   - [Tracker::Task (Aufgaben)](#trackertask-aufgaben)
     - [Alle Aufgaben](#alle-aufgaben)
     - [Eine bestimmte Aufgabe](#eine-bestimmte-aufgabe)
@@ -1863,6 +1868,77 @@ client.v1.project.by({ id: 6561 }).then((project, err) => {
 ```
 
 </details>
+
+#### Neues Projekt erstellen
+
+```js
+const customerId = 3
+client.v1.project.create(customerId, {
+  name: "My first project",
+  description: "This is my first project to make money.",
+  startDate: "2020-05-01",
+  endDate: "2020-05-31",
+  flagged: false,
+  budgetType: "money",
+  budgetMoney: "50000.0",
+  budgetTime: null,
+  budgetTimeUnit: null,
+  color: null,
+  defaultPropositionId: 918,
+  teamMembers: [{ id: 1}, { id: 2}],
+}).then((project, err) => {
+  console.log(project);
+});
+```
+
+#### Update eines Projekts
+
+```js
+const projectId = 3
+client.v1.project.update(projectId, {
+  name: "My first project",
+  description: "This is my first project to make money.",
+  startDate: "2020-05-01",
+  endDate: "2020-05-31",
+  flagged: false,
+  budgetType: "money",
+  budgetMoney: "50000.0",
+  budgetTime: null,
+  budgetTimeUnit: null,
+  color: null,
+  defaultPropositionId: 918,
+  teamMembers: [{ id: 1}, { id: 2}],
+}).then((project, err) => {
+  console.log(project);
+});
+```
+
+#### Archivieren eines Projekts
+
+```js
+const projectId = 3
+client.v1.project.archive(projectId).then((project, err) => {
+  console.log(project);
+});
+```
+
+#### Unarchivieren eines Projekts
+
+```js
+const projectId = 3
+client.v1.project.unarchive(projectId).then((project, err) => {
+  console.log(project);
+});
+```
+
+#### Löschen eines Projekts
+
+```js
+const projectId = 3
+client.v1.project.delete(projectId).then((project, err) => {
+  console.log(project);
+});
+```
 
 ### Tracker::Task (Aufgaben)
 

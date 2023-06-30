@@ -4,6 +4,7 @@
 
 ### Added
 
+- [#13](https://github.com/simonneutert/papierkram-api-client/pull/13) Adds endpoints for projects. [@simonneutert](https://github.com/simonneutert)
 - [#4](https://github.com/simonneutert/papierkram-api-client/pull/4) Adds ESLint and Prettier as part of CI. [@simonneutert](https://github.com/simonneutert)
 - [#3](https://github.com/simonneutert/papierkram-api-client/pull/3) Implements a sanitizer for talkback tapes. [@simonneutert](https://github.com/simonneutert)
 
