@@ -30,7 +30,10 @@ function talkbackStart() {
       allowHeaders: ["accept", "content-type", "method", "remaining-quota"],
       tapeNameGenerator: function nameGenerator(tapeNumber, tape) {
         return join(
-          `${tape.req.method}${tape.req.url.replaceAll("/", "_")}-${tapeNumber}`
+          `${tape.req.method}${tape.req.url.replaceAll(
+            "/",
+            "_",
+          )}-${tapeNumber}`,
         );
       },
       tapeDecorator: function tapeDecorator(tape, _context) {
