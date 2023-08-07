@@ -13,7 +13,7 @@ afterAll(() => {
 
 const client = new PapierkramApiClientV1(
   process.env.PAPIERKRAM_API_SUBDOMAIN,
-  process.env.PAPIERKRAM_API_KEY
+  process.env.PAPIERKRAM_API_KEY,
 );
 
 test("ApiV1TrackerTask all", async () => {
@@ -27,7 +27,7 @@ test("ApiV1TrackerTask all", async () => {
 
 test("ApiV1TrackerTask by id", async () => {
   const { status: status, body: responseBody } = await client.v1.trackerTask.by(
-    { id: 1 }
+    { id: 1 },
   );
   expect(status).toBe(200);
   expect(responseBody).toBeDefined();

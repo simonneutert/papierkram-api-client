@@ -13,7 +13,7 @@ afterAll(() => {
 
 const client = new PapierkramApiClientV1(
   process.env.PAPIERKRAM_API_SUBDOMAIN,
-  process.env.PAPIERKRAM_API_KEY
+  process.env.PAPIERKRAM_API_KEY,
 );
 
 test("ApiV1Project all", async () => {
