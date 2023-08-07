@@ -119,3 +119,46 @@ test("ApiV1Project by id", async () => {
   expect(responseBody.vouchers).toHaveProperty("url");
   return responseBody;
 });
+
+test("ApiV1Project create project", async () => {
+  const { status: status, body: responseBody } = await client.v1.project.create(
+    3,
+    {
+      name: "Test Project",
+    },
+  );
+  expect(status).toBe(201);
+  expect(responseBody).toBeDefined();
+});
+
+test("ApiV1Project update project", async () => {
+  const { status: status, body: responseBody } = await client.v1.project.update(
+    15,
+    {
+      name: "Test Projectesticle",
+    },
+  );
+  expect(status).toBe(200);
+  expect(responseBody).toBeDefined();
+});
+
+test("ApiV1Project archive project", async () => {
+  const { status: status, body: responseBody } =
+    await client.v1.project.archive(18);
+  expect(status).toBe(200);
+  expect(responseBody).toBeDefined();
+});
+
+test("ApiV1Project unarchive project", async () => {
+  const { status: status, body: responseBody } =
+    await client.v1.project.unarchive(18);
+  expect(status).toBe(200);
+  expect(responseBody).toBeDefined();
+});
+
+test("ApiV1Project delete project", async () => {
+  const { status: status, body: responseBody } =
+    await client.v1.project.delete(36);
+  expect(status).toBe(204);
+  expect(responseBody).toBeDefined();
+});

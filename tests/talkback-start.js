@@ -46,7 +46,12 @@ function talkbackStart() {
           tape.res.headers["set-cookie"] = "<SET-COOKIE>";
         }
 
-        const tapeBody = JSON.parse(tape.res.body);
+        let tapeBody = {};
+        try {
+          tapeBody = JSON.parse(tape.res.body);
+        } catch (error) {
+          tapeBody = {};
+        }
 
         traverse(tapeBody, function (key, value, obj) {
           if (key === "type") {
