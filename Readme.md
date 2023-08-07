@@ -2,7 +2,7 @@
 
 Der erste ~~illegale~~ nicht offizielle Papierkram-Client für die Papierkram-API für NodeJS.
 
-[![Node.js CI](https://github.com/simonneutert/papierkram-api-client/actions/workflows/node-main.js.yml/badge.svg?branch=main&event=push)](https://github.com/simonneutert/papierkram-api-client/actions/workflows/node-main.js.yml) [![Node.js CI for other versions](https://github.com/simonneutert/papierkram-api-client/actions/workflows/node-others.js.yml/badge.svg?branch=main&event=push)](https://github.com/simonneutert/papierkram-api-client/actions/workflows/node-others.js.yml)
+[![Node.js current](https://github.com/simonneutert/papierkram-api-client/actions/workflows/node-current.yml/badge.svg?branch=main&event=push)](https://github.com/simonneutert/papierkram-api-client/actions/workflows/node-current.yml) [![Node.js legacy](https://github.com/simonneutert/papierkram-api-client/actions/workflows/node-legacy.yml/badge.svg?branch=main&event=push)](https://github.com/simonneutert/papierkram-api-client/actions/workflows/node-legacy.yml)
 
 <img src="pac_logo_js.svg" alt="Gleiches Logo wie Ruby Version, nur Frosch hat Knoten in der Zunge, der wie ein j und ein s aussieht. Das ist lustig, weil zufällig die Software in JavScript geschrieben ist :D" width="300">
 
