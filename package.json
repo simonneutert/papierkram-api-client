@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "NODE_OPTIONS=--experimental-vm-modules npx jest --detectOpenHandles --runInBand --forceExit",
-    "lint": "npx eslint lib test",
+    "lint": "npx eslint lib tests",
     "lint:fix": "npm run lint -- --fix",
-    "prettier": "npx prettier lib test --check",
+    "prettier": "npx prettier lib tests --check",
     "prettier:fix": "npm run prettier -- --write",
     "format": "npm run prettier:fix && npm run lint:fix"
   },

@@ -1,6 +1,17 @@
 # .npmignore
 node_modules
 tests
+tapes
 .env
 .envrc
+.env.example
+
+# config files
 .vscode/**/*
+.github/**/*
+.tool-versions
+.eslintrc
+.prettierignore
+
+# files/assets
+pac_logo_js.svg
