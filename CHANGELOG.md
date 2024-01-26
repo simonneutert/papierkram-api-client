@@ -2,6 +2,10 @@
 
 [next] - yyyy-mm-dd
 
+### Updated
+
+- [#66](https://github.com/simonneutert/papierkram-api-client/pull/66) npm audit ➡️ back to 0 dependencies. [@simonneutert](https://github.com/simonneutert)
+
 ### Added
 
 - [#13](https://github.com/simonneutert/papierkram-api-client/pull/13) Adds writing endpoints for projects. [@simonneutert](https://github.com/simonneutert)
