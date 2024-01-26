@@ -6,6 +6,10 @@ Schema for new entries:
 - [#<PR-NUMBER>](https://github.com/simonneutert/papierkram-api-client/pull/<PR-NUMBER>) <TITLE> [@<AUTHOR>](https://github.com/<AUTHOR>)
 ```
 
+[next] - unreleased
+
+- [#<PR-NUMBER>](https://github.com/simonneutert/papierkram-api-client/pull/<PR-NUMBER>) <TITLE> [@<AUTHOR>](https://github.com/<AUTHOR>)
+
 [0.3.0] - 2024-01-26
 
 ### Updated
