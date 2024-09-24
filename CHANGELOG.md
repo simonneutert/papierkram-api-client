@@ -8,6 +8,10 @@ Schema for new entries:
 - [#<PR-NUMBER>](https://github.com/simonneutert/papierkram-api-client/pull/<PR-NUMBER>) <TITLE> [@<AUTHOR>](https://github.com/<AUTHOR>)
 ```
 
+[next] - unreleased
+
+- [#<PR-NUMBER>](https://github.com/simonneutert/papierkram-api-client/pull/<PR-NUMBER>) <TITLE> [@<AUTHOR>](https://github.com/<AUTHOR>)
+
 [0.3.1] - 2024-09-24
 
 Massive update in terms of dependencies and security vulnerabilities of npm packages.
