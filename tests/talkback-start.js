@@ -50,6 +50,7 @@ function talkbackStart() {
         try {
           tapeBody = JSON.parse(tape.res.body);
         } catch (error) {
+          console.error(error);
           tapeBody = {};
         }
 
