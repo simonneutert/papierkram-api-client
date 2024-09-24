@@ -1,115 +1,63 @@
 {
-    meta: {
-        createdAt: '2023-04-22T07:37:13.441Z',
-        host: 'https://simonneutert.papierkram.de',
-        resHumanReadable: true,
+  meta: {
+    createdAt: "2023-04-22T07:37:13.441Z",
+    host: "https://simonneutert.papierkram.de",
+    resHumanReadable: true,
+  },
+  req: {
+    headers: {
+      accept: "application/json",
+      method: "GET",
     },
-    req: {
-        headers: {
-            accept: 'application/json',
-            method: 'GET',
-        },
-        url: '/api/v1/banking/bank_connections?page=1&page_size=100',
-        method: 'GET',
-        body: '',
+    url: "/api/v1/banking/bank_connections?page=1&page_size=100",
+    method: "GET",
+    body: "",
+  },
+  res: {
+    status: 200,
+    headers: {
+      "content-type": ["application/json; charset=utf-8"],
+      "transfer-encoding": ["chunked"],
+      status: ["200 OK"],
+      "cache-control": ["no-store"],
+      "access-control-allow-origin": ["*"],
+      vary: ["Accept"],
+      "referrer-policy": ["strict-origin-when-cross-origin"],
+      "x-remaining-quota": ["8623"],
+      "x-permitted-cross-domain-policies": ["none"],
+      pragma: ["no-cache"],
+      "x-request-id": ["d1c860b2-8ab3-4062-b72c-20ea6d542c0e"],
+      "x-download-options": ["noopen"],
+      etag: ['W/"d729c5d0613a54708a185c15a560720b"'],
+      "x-frame-options": ["SAMEORIGIN"],
+      "x-runtime": ["0.288120"],
+      expires: ["Fri, 01 Jan 1990 00:00:00 GMT"],
+      date: ["Sat, 22 Apr 2023 07:37:13 GMT"],
+      "set-cookie": "<SET-COOKIE>",
+      "x-powered-by": ["Phusion Passenger(R) 6.0.15"],
+      server: ["nginx/1.18.0 + Phusion Passenger(R) 6.0.15"],
+      "x-version": ["STABLE"],
+      "x-robots-tag": ["noindex, nofollow;"],
+      "strict-transport-security": ["max-age=31536000; includeSubdomains;;"],
+      "x-xss-protection": ["1; mode=block;"],
+      "x-content-type-options": ["nosniff;"],
+      "x-debug-subdomain": ["simonneutert"],
+      connection: ["close"],
     },
-    res: {
-        status: 200,
-        headers: {
-            'content-type': [
-                'application/json; charset=utf-8',
-            ],
-            'transfer-encoding': [
-                'chunked',
-            ],
-            status: [
-                '200 OK',
-            ],
-            'cache-control': [
-                'no-store',
-            ],
-            'access-control-allow-origin': [
-                '*',
-            ],
-            vary: [
-                'Accept',
-            ],
-            'referrer-policy': [
-                'strict-origin-when-cross-origin',
-            ],
-            'x-remaining-quota': [
-                '8623',
-            ],
-            'x-permitted-cross-domain-policies': [
-                'none',
-            ],
-            pragma: [
-                'no-cache',
-            ],
-            'x-request-id': [
-                'd1c860b2-8ab3-4062-b72c-20ea6d542c0e',
-            ],
-            'x-download-options': [
-                'noopen',
-            ],
-            etag: [
-                'W/"d729c5d0613a54708a185c15a560720b"',
-            ],
-            'x-frame-options': [
-                'SAMEORIGIN',
-            ],
-            'x-runtime': [
-                '0.288120',
-            ],
-            expires: [
-                'Fri, 01 Jan 1990 00:00:00 GMT',
-            ],
-            date: [
-                'Sat, 22 Apr 2023 07:37:13 GMT',
-            ],
-            'set-cookie': '<SET-COOKIE>',
-            'x-powered-by': [
-                'Phusion Passenger(R) 6.0.15',
-            ],
-            server: [
-                'nginx/1.18.0 + Phusion Passenger(R) 6.0.15',
-            ],
-            'x-version': [
-                'STABLE',
-            ],
-            'x-robots-tag': [
-                'noindex, nofollow;',
-            ],
-            'strict-transport-security': [
-                'max-age=31536000; includeSubdomains;;',
-            ],
-            'x-xss-protection': [
-                '1; mode=block;',
-            ],
-            'x-content-type-options': [
-                'nosniff;',
-            ],
-            'x-debug-subdomain': [
-                'simonneutert',
-            ],
-            connection: [
-                'close',
-            ],
+    body: {
+      type: "list",
+      page: 1,
+      page_size: 100,
+      total_pages: 1,
+      total_entries: 1,
+      has_more: false,
+      entries: [
+        {
+          type: "bank_connection",
+          id: 4,
+          name: "Standard",
         },
-        body: {
-            type: 'list',
-            page: 1,
-            page_size: 100,
-            total_pages: 1,
-            total_entries: 1,
-            has_more: false,
-            entries: [
-                {
-                    type: 'bank_connection',
-                    id: 4,
-                    name: 'Standard',
-                },
-            ],
-        },
+      ],
     },
+  },
 }

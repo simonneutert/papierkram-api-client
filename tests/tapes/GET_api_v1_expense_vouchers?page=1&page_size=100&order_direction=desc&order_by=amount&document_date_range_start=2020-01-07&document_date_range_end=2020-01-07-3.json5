@@ -1,127 +1,75 @@
 {
-    meta: {
-        createdAt: '2023-04-22T07:37:08.407Z',
-        host: 'https://simonneutert.papierkram.de',
-        resHumanReadable: true,
+  meta: {
+    createdAt: "2023-04-22T07:37:08.407Z",
+    host: "https://simonneutert.papierkram.de",
+    resHumanReadable: true,
+  },
+  req: {
+    headers: {
+      accept: "application/json",
+      method: "GET",
     },
-    req: {
-        headers: {
-            accept: 'application/json',
-            method: 'GET',
-        },
-        url: '/api/v1/expense/vouchers?page=1&page_size=100&order_direction=desc&order_by=amount&document_date_range_start=2020-01-07&document_date_range_end=2020-01-07',
-        method: 'GET',
-        body: '',
+    url: "/api/v1/expense/vouchers?page=1&page_size=100&order_direction=desc&order_by=amount&document_date_range_start=2020-01-07&document_date_range_end=2020-01-07",
+    method: "GET",
+    body: "",
+  },
+  res: {
+    status: 200,
+    headers: {
+      "content-type": ["application/json; charset=utf-8"],
+      "transfer-encoding": ["chunked"],
+      status: ["200 OK"],
+      "cache-control": ["no-store"],
+      "access-control-allow-origin": ["*"],
+      vary: ["Accept"],
+      "referrer-policy": ["strict-origin-when-cross-origin"],
+      "x-remaining-quota": ["8637"],
+      "x-permitted-cross-domain-policies": ["none"],
+      pragma: ["no-cache"],
+      "x-request-id": ["eda0acc9-7402-4d76-a063-4d244090902a"],
+      "x-download-options": ["noopen"],
+      etag: ['W/"f2e22a53ca5135184b13e2bb167714c7"'],
+      "x-frame-options": ["SAMEORIGIN"],
+      "x-runtime": ["0.107568"],
+      expires: ["Fri, 01 Jan 1990 00:00:00 GMT"],
+      date: ["Sat, 22 Apr 2023 07:37:08 GMT"],
+      "set-cookie": "<SET-COOKIE>",
+      "x-powered-by": ["Phusion Passenger(R) 6.0.15"],
+      server: ["nginx/1.18.0 + Phusion Passenger(R) 6.0.15"],
+      "x-version": ["STABLE"],
+      "x-robots-tag": ["noindex, nofollow;"],
+      "strict-transport-security": ["max-age=31536000; includeSubdomains;;"],
+      "x-xss-protection": ["1; mode=block;"],
+      "x-content-type-options": ["nosniff;"],
+      "x-debug-subdomain": ["simonneutert"],
+      connection: ["close"],
     },
-    res: {
-        status: 200,
-        headers: {
-            'content-type': [
-                'application/json; charset=utf-8',
-            ],
-            'transfer-encoding': [
-                'chunked',
-            ],
-            status: [
-                '200 OK',
-            ],
-            'cache-control': [
-                'no-store',
-            ],
-            'access-control-allow-origin': [
-                '*',
-            ],
-            vary: [
-                'Accept',
-            ],
-            'referrer-policy': [
-                'strict-origin-when-cross-origin',
-            ],
-            'x-remaining-quota': [
-                '8637',
-            ],
-            'x-permitted-cross-domain-policies': [
-                'none',
-            ],
-            pragma: [
-                'no-cache',
-            ],
-            'x-request-id': [
-                'eda0acc9-7402-4d76-a063-4d244090902a',
-            ],
-            'x-download-options': [
-                'noopen',
-            ],
-            etag: [
-                'W/"f2e22a53ca5135184b13e2bb167714c7"',
-            ],
-            'x-frame-options': [
-                'SAMEORIGIN',
-            ],
-            'x-runtime': [
-                '0.107568',
-            ],
-            expires: [
-                'Fri, 01 Jan 1990 00:00:00 GMT',
-            ],
-            date: [
-                'Sat, 22 Apr 2023 07:37:08 GMT',
-            ],
-            'set-cookie': '<SET-COOKIE>',
-            'x-powered-by': [
-                'Phusion Passenger(R) 6.0.15',
-            ],
-            server: [
-                'nginx/1.18.0 + Phusion Passenger(R) 6.0.15',
-            ],
-            'x-version': [
-                'STABLE',
-            ],
-            'x-robots-tag': [
-                'noindex, nofollow;',
-            ],
-            'strict-transport-security': [
-                'max-age=31536000; includeSubdomains;;',
-            ],
-            'x-xss-protection': [
-                '1; mode=block;',
-            ],
-            'x-content-type-options': [
-                'nosniff;',
-            ],
-            'x-debug-subdomain': [
-                'simonneutert',
-            ],
-            connection: [
-                'close',
-            ],
+    body: {
+      type: "list",
+      page: 1,
+      page_size: 100,
+      total_pages: 1,
+      total_entries: 1,
+      has_more: false,
+      entries: [
+        {
+          type: "expense_voucher",
+          id: 13,
+          name: "B-00005 - 2020-01-07",
+          due_date: "2020-01-07",
+          document_date: "2020-01-07",
+          description: "",
+          entertainment_reason: "",
+          flagged: false,
+          provenance: "domestic",
+          voucher_no: "B-00005",
+          state: "unpaid",
+          record_state: "active",
+          amount: -119,
+          invoice_amount: 0,
+          entertainment_persons: [],
         },
-        body: {
-            type: 'list',
-            page: 1,
-            page_size: 100,
-            total_pages: 1,
-            total_entries: 1,
-            has_more: false,
-            entries: [
-                {
-                    type: 'expense_voucher',
-                    id: 13,
-                    name: 'B-00005 - 2020-01-07',
-                    due_date: '2020-01-07',
-                    document_date: '2020-01-07',
-                    description: '',
-                    entertainment_reason: '',
-                    flagged: false,
-                    provenance: 'domestic',
-                    voucher_no: 'B-00005',
-                    state: 'unpaid',
-                    record_state: 'active',
-                    amount: -119,
-                    invoice_amount: 0,
-                    entertainment_persons: [],
-                },
-            ],
-        },
+      ],
     },
+  },
 }
