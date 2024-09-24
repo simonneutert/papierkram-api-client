@@ -1,139 +1,87 @@
 {
-    meta: {
-        createdAt: '2023-04-22T07:37:10.493Z',
-        host: 'https://simonneutert.papierkram.de',
-        resHumanReadable: true,
+  meta: {
+    createdAt: "2023-04-22T07:37:10.493Z",
+    host: "https://simonneutert.papierkram.de",
+    resHumanReadable: true,
+  },
+  req: {
+    headers: {
+      accept: "application/json",
+      method: "GET",
     },
-    req: {
-        headers: {
-            accept: 'application/json',
-            method: 'GET',
-        },
-        url: '/api/v1/banking/transactions/4',
-        method: 'GET',
-        body: '',
+    url: "/api/v1/banking/transactions/4",
+    method: "GET",
+    body: "",
+  },
+  res: {
+    status: 200,
+    headers: {
+      "content-type": ["application/json; charset=utf-8"],
+      "transfer-encoding": ["chunked"],
+      status: ["200 OK"],
+      "cache-control": ["no-store"],
+      "access-control-allow-origin": ["*"],
+      vary: ["Accept"],
+      "referrer-policy": ["strict-origin-when-cross-origin"],
+      "x-remaining-quota": ["8632"],
+      "x-permitted-cross-domain-policies": ["none"],
+      pragma: ["no-cache"],
+      "x-request-id": ["61cb2e9c-07e6-4c18-bde7-a46f61afa668"],
+      "x-download-options": ["noopen"],
+      etag: ['W/"f11b8b9ec095014620e8d657b56c0a6e"'],
+      "x-frame-options": ["SAMEORIGIN"],
+      "x-runtime": ["0.127345"],
+      expires: ["Fri, 01 Jan 1990 00:00:00 GMT"],
+      date: ["Sat, 22 Apr 2023 07:37:10 GMT"],
+      "set-cookie": "<SET-COOKIE>",
+      "x-powered-by": ["Phusion Passenger(R) 6.0.15"],
+      server: ["nginx/1.18.0 + Phusion Passenger(R) 6.0.15"],
+      "x-version": ["STABLE"],
+      "x-robots-tag": ["noindex, nofollow;"],
+      "strict-transport-security": ["max-age=31536000; includeSubdomains;;"],
+      "x-xss-protection": ["1; mode=block;"],
+      "x-content-type-options": ["nosniff;"],
+      "x-debug-subdomain": ["simonneutert"],
+      connection: ["close"],
     },
-    res: {
-        status: 200,
-        headers: {
-            'content-type': [
-                'application/json; charset=utf-8',
-            ],
-            'transfer-encoding': [
-                'chunked',
-            ],
-            status: [
-                '200 OK',
-            ],
-            'cache-control': [
-                'no-store',
-            ],
-            'access-control-allow-origin': [
-                '*',
-            ],
-            vary: [
-                'Accept',
-            ],
-            'referrer-policy': [
-                'strict-origin-when-cross-origin',
-            ],
-            'x-remaining-quota': [
-                '8632',
-            ],
-            'x-permitted-cross-domain-policies': [
-                'none',
-            ],
-            pragma: [
-                'no-cache',
-            ],
-            'x-request-id': [
-                '61cb2e9c-07e6-4c18-bde7-a46f61afa668',
-            ],
-            'x-download-options': [
-                'noopen',
-            ],
-            etag: [
-                'W/"f11b8b9ec095014620e8d657b56c0a6e"',
-            ],
-            'x-frame-options': [
-                'SAMEORIGIN',
-            ],
-            'x-runtime': [
-                '0.127345',
-            ],
-            expires: [
-                'Fri, 01 Jan 1990 00:00:00 GMT',
-            ],
-            date: [
-                'Sat, 22 Apr 2023 07:37:10 GMT',
-            ],
-            'set-cookie': '<SET-COOKIE>',
-            'x-powered-by': [
-                'Phusion Passenger(R) 6.0.15',
-            ],
-            server: [
-                'nginx/1.18.0 + Phusion Passenger(R) 6.0.15',
-            ],
-            'x-version': [
-                'STABLE',
-            ],
-            'x-robots-tag': [
-                'noindex, nofollow;',
-            ],
-            'strict-transport-security': [
-                'max-age=31536000; includeSubdomains;;',
-            ],
-            'x-xss-protection': [
-                '1; mode=block;',
-            ],
-            'x-content-type-options': [
-                'nosniff;',
-            ],
-            'x-debug-subdomain': [
-                'simonneutert',
-            ],
-            connection: [
-                'close',
-            ],
-        },
-        body: {
-            type: 'banking_transaction',
-            id: 4,
-            state: 'imported',
-            value: '<VALUE_TYPE_NUMBER>',
-            currency: 'EUR',
-            storno: false,
-            customerref: null,
-            instref: null,
-            gvcode: null,
-            text: 'ÜBERTRAG',
-            usage: '<USAGE>',
-            transaction_type: 'fintecapi',
-            sepa: null,
-            from: {
-                bic: '<BIC>',
-                iban: '<IBAN>',
-                account_no: null,
-                blz: '<BLZ>',
-                currency: 'EUR',
-                name: 'SIMON NEUTERT',
-            },
-            saldo: {
-                value: '<SALDO-TYPE-NUMBER>',
-                currency: 'EUR',
-                timestamp: '2018-12-05T00:00:00.000+01:00',
-            },
-            primanota: null,
-            valuta: null,
-            bdate: '2018-12-05T00:00:00.000+01:00',
-            seen: true,
-            fintecapi_turnover_id: '',
-            imported_at: '2019-12-02T14:58:30.000+01:00',
-            created_at: '2019-12-02T14:58:30.000+01:00',
-            updated_at: '2019-12-02T14:58:30.000+01:00',
-            tags: null,
-            categories: null,
-            bank_connection: null,
-        },
+    body: {
+      type: "banking_transaction",
+      id: 4,
+      state: "imported",
+      value: "<VALUE_TYPE_NUMBER>",
+      currency: "EUR",
+      storno: false,
+      customerref: null,
+      instref: null,
+      gvcode: null,
+      text: "ÜBERTRAG",
+      usage: "<USAGE>",
+      transaction_type: "fintecapi",
+      sepa: null,
+      from: {
+        bic: "<BIC>",
+        iban: "<IBAN>",
+        account_no: null,
+        blz: "<BLZ>",
+        currency: "EUR",
+        name: "SIMON NEUTERT",
+      },
+      saldo: {
+        value: "<SALDO-TYPE-NUMBER>",
+        currency: "EUR",
+        timestamp: "2018-12-05T00:00:00.000+01:00",
+      },
+      primanota: null,
+      valuta: null,
+      bdate: "2018-12-05T00:00:00.000+01:00",
+      seen: true,
+      fintecapi_turnover_id: "",
+      imported_at: "2019-12-02T14:58:30.000+01:00",
+      created_at: "2019-12-02T14:58:30.000+01:00",
+      updated_at: "2019-12-02T14:58:30.000+01:00",
+      tags: null,
+      categories: null,
+      bank_connection: null,
     },
+  },
 }

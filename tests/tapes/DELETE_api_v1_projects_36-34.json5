@@ -1,90 +1,44 @@
 {
-    meta: {
-        createdAt: '2023-06-30T15:25:08.472Z',
-        host: 'https://simonneutert.papierkram.de',
+  meta: {
+    createdAt: "2023-06-30T15:25:08.472Z",
+    host: "https://simonneutert.papierkram.de",
+  },
+  req: {
+    headers: {
+      accept: "application/json",
     },
-    req: {
-        headers: {
-            accept: 'application/json',
-        },
-        url: '/api/v1/projects/36',
-        method: 'DELETE',
-        body: '',
+    url: "/api/v1/projects/36",
+    method: "DELETE",
+    body: "",
+  },
+  res: {
+    status: 204,
+    headers: {
+      status: ["204 No Content"],
+      "cache-control": ["no-store"],
+      "access-control-allow-origin": ["*"],
+      "referrer-policy": ["strict-origin-when-cross-origin"],
+      "x-remaining-quota": ["9709"],
+      "x-permitted-cross-domain-policies": ["none"],
+      pragma: ["no-cache"],
+      "x-consumed-quota": ["1"],
+      "x-request-id": ["7d95acff-55ab-4f46-9f4f-5cf0d33cd1ae"],
+      "x-download-options": ["noopen"],
+      "x-runtime": ["0.139468"],
+      "x-frame-options": ["SAMEORIGIN"],
+      expires: ["Fri, 01 Jan 1990 00:00:00 GMT"],
+      date: ["Fri, 30 Jun 2023 15:25:08 GMT"],
+      "set-cookie": "<SET-COOKIE>",
+      "x-powered-by": ["Phusion Passenger(R) 6.0.15"],
+      server: ["nginx/1.18.0 + Phusion Passenger(R) 6.0.15"],
+      "x-version": ["STABLE"],
+      "x-robots-tag": ["noindex, nofollow;"],
+      "strict-transport-security": ["max-age=31536000; includeSubdomains;;"],
+      "x-xss-protection": ["1; mode=block;"],
+      "x-content-type-options": ["nosniff;"],
+      "x-debug-subdomain": ["simonneutert"],
+      connection: ["close"],
     },
-    res: {
-        status: 204,
-        headers: {
-            status: [
-                '204 No Content',
-            ],
-            'cache-control': [
-                'no-store',
-            ],
-            'access-control-allow-origin': [
-                '*',
-            ],
-            'referrer-policy': [
-                'strict-origin-when-cross-origin',
-            ],
-            'x-remaining-quota': [
-                '9709',
-            ],
-            'x-permitted-cross-domain-policies': [
-                'none',
-            ],
-            pragma: [
-                'no-cache',
-            ],
-            'x-consumed-quota': [
-                '1',
-            ],
-            'x-request-id': [
-                '7d95acff-55ab-4f46-9f4f-5cf0d33cd1ae',
-            ],
-            'x-download-options': [
-                'noopen',
-            ],
-            'x-runtime': [
-                '0.139468',
-            ],
-            'x-frame-options': [
-                'SAMEORIGIN',
-            ],
-            expires: [
-                'Fri, 01 Jan 1990 00:00:00 GMT',
-            ],
-            date: [
-                'Fri, 30 Jun 2023 15:25:08 GMT',
-            ],
-            'set-cookie': '<SET-COOKIE>',
-            'x-powered-by': [
-                'Phusion Passenger(R) 6.0.15',
-            ],
-            server: [
-                'nginx/1.18.0 + Phusion Passenger(R) 6.0.15',
-            ],
-            'x-version': [
-                'STABLE',
-            ],
-            'x-robots-tag': [
-                'noindex, nofollow;',
-            ],
-            'strict-transport-security': [
-                'max-age=31536000; includeSubdomains;;',
-            ],
-            'x-xss-protection': [
-                '1; mode=block;',
-            ],
-            'x-content-type-options': [
-                'nosniff;',
-            ],
-            'x-debug-subdomain': [
-                'simonneutert',
-            ],
-            connection: [
-                'close',
-            ],
-        },
-        body: 'e30=',
-    },
+    body: "e30=",
+  },
 }
