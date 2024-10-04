@@ -1,6 +1,6 @@
 # papierkram-api-client<!-- omit from toc -->
 
-Der erste ~~illegale~~ nicht offizielle Papierkram-Client für die Papierkram-API für NodeJS.
+Der erste ~~illegale~~ inoffizielle Papierkram-Client für die Papierkram-API für NodeJS.
 
 [![Node.js current](https://github.com/simonneutert/papierkram-api-client/actions/workflows/node-current.yml/badge.svg?branch=main&event=push)](https://github.com/simonneutert/papierkram-api-client/actions/workflows/node-current.yml) [![Node.js legacy](https://github.com/simonneutert/papierkram-api-client/actions/workflows/node-legacy.yml/badge.svg?branch=main&event=push)](https://github.com/simonneutert/papierkram-api-client/actions/workflows/node-legacy.yml)
 
