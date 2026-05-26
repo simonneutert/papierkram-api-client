@@ -1,7 +1,7 @@
 {
   "name": "papierkram-api-client",
   "version": "0.3.2",
-  "description": "",
+  "description": "DEPRECATED: this package is no longer maintained.",
   "main": "index.js",
   "scripts": {
     "test": "NODE_OPTIONS=--experimental-vm-modules npx jest --detectOpenHandles --runInBand --forceExit",
